@@ -85,7 +85,7 @@ if FIGplot:
              preFig = 'lcdm-', sufFig = '.png', dataKwargs = dataKwargs, truthFile = LMminFile)
 
 
-best = copy.deepcopy(startp)
+best = np.copy.deepcopy(startp)
 freeIndex   = [i for i, j in enumerate(freePara) if j>0]
 best[freeIndex] = sim.bestPara
 
